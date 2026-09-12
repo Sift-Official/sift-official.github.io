@@ -13,25 +13,31 @@
 <body>
     <header>
         <div class="container">
-            <h1>Home</h1>
+            <h1 data-i18n="home">Home</h1>
             <nav>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="tos.html">Terms of Service</a>
+                <a href="privacy.html" data-i18n="privacy">Privacy Policy</a>
+                <a href="tos.html" data-i18n="tos">Terms of Service</a>
             </nav>
-            <button id="tt" class="tt" aria-label="Toggle Theme">🌙</button>
+            <div class="header-controls">
+                <select id="lang-select" class="lang-select" aria-label="Select Language">
+                    <option value="en">🇬🇧 </option>
+                    <option value="de">🇩🇪 </option>
+                </select>
+                <button id="tt" class="tt" aria-label="Toggle Theme">🌙</button>
+            </div>
         </div>
     </header>
     <main class="container">
         <section class="ho">
             <div class="bg">
-                <a href="https://discord.com/discovery/applications/1492652471036678258" class="btn primary">Invite Nether</a>
-                <a href="https://discord.gg/bds" class="btn secondary">Join Discord</a>
+                <a href="https://discord.com/discovery/applications/1492652471036678258" class="btn primary" data-i18n="invite">Invite Nether</a>
+                <a href="https://discord.gg/bds" class="btn secondary" data-i18n="joinDiscord">Join Discord</a>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Nether Official. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+            <p data-i18n="footer">&copy; 2026 Nether Official. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
         </div>
     </footer>
 </body>
